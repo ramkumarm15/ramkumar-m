@@ -29,6 +29,7 @@
 
 @media screen and (max-width: 787px) {
     .loader-main {
-        width: 106%;
+        margin-left: 0;
+        margin-right: 0;
     }
 }

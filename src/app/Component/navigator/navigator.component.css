@@ -1,0 +1,21 @@
+.navigator a {
+    font-size: 18px;
+    color: var(--si-dark);
+}
+
+.btn-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 747px) {
+    .navigator {
+        margin-top: 10px;
+    }
+
+    .navigator a {
+        font-size: 12px;
+    }
+}

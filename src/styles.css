@@ -4,15 +4,28 @@ body {
     font-size: 16px;
     line-height: 30px;
     color: #ababab;
+    transition: all 1s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
+    color: var(--si-primary);
 }
 
 .page-wrapper {
-    border-top: 6px solid var(--si-primary);
+    /* border-top: 6px solid var(--si-primary); */
 }
+
+
 
 .page {
     width: 100%;
-    height: calc(100vh - 6px);
+    height: 100vh;
 }
 
 @media screen and (max-width: 787px) {

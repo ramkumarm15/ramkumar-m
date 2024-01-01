@@ -1,7 +1,28 @@
+/* .hero-bg {
+    background-color: #41228e !important;
+    position: relative;
+}
+
+.hero-bg::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    background-image: url("https://demo.themefisher.com/kross-bootstrap/images/illustrations/leaf-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+} */
+
+.page-title h1 {
+    z-index: 9999;
+}
+
 .page-title h1 {
     font-weight: 900;
     font-size: 56px;
-    color: var(--si-primary);
 }
 
 .page-title p {
@@ -12,6 +33,27 @@
     position: absolute;
     left: 0;
     right: 0;
+}
+
+.page-title h1 span::before {
+    content: "Greetings!";
+    animation: animate infinite 7s;
+    padding-left: 10px;
+    transition: all 1s ease-in-out;
+}
+
+@keyframes animate {
+    0% {
+        content: "Greetings!";
+    }
+
+    50% {
+        content: "I'm Ramkumar";
+    }
+
+    100% {
+        content: "Check my portfolio";
+    }
 }
 
 @media screen and (max-width: 787px) {

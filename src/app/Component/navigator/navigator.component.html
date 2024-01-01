@@ -1,0 +1,18 @@
+<div class="row navigator">
+  <div class="col-12 d-flex align-items-center justify-content-between px-3">
+    <a class="text-decoration-none" [routerLink]="[navigations.prevPage?.url]"
+      ><i class="bx bx-left-arrow-alt me-1"></i>
+      {{ navigations.prevPage?.name }}</a
+    >
+    <a
+      >{{ navigations.nextpage?.name }}
+      <i class="bx bx-right-arrow-alt ms-1"></i
+    ></a>
+    <button
+      type="button"
+      [routerLink]="['/']"
+      class="btn-close"
+      aria-label="Close"
+    ></button>
+  </div>
+</div>
