@@ -1,4 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { Navigation } from 'src/app/Model/navigation';
 
 @Component({
@@ -12,7 +13,12 @@ export class AboutComponent implements OnInit, OnDestroy {
 
   aboutPageNavigation!: Navigation;
 
+  pageTitle: string = 'About Me';
+
+  constructor(private title: Title) {}
+
   ngOnInit(): void {
+    this.title.setTitle(`Ramkumar M | ${this.pageTitle}`);
     this.pageLoad = setTimeout(() => {
       this.loading = false;
     }, 2000);
@@ -28,7 +34,7 @@ export class AboutComponent implements OnInit, OnDestroy {
     };
   }
 
-  imgUrl: string = 'assets/images/ramkumar.jpg';
+  imageUrl: string = 'assets/images/ramkumar.jpg';
   name: string = 'Ramkumar';
   experience: number = 2;
   description: string = `Greetings! I'm <span class='text-dark fw-bold'>${this.name}</span>, 

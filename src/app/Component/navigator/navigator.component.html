@@ -4,15 +4,15 @@
       ><i class="bx bx-left-arrow-alt me-1"></i>
       {{ navigations.prevPage?.name }}</a
     >
-    <a
-      >{{ navigations.nextpage?.name }}
-      <i class="bx bx-right-arrow-alt ms-1"></i
-    ></a>
     <button
       type="button"
       [routerLink]="['/']"
       class="btn-close"
       aria-label="Close"
     ></button>
+    <a class="text-decoration-none" [routerLink]="[navigations.nextpage?.url]"
+      >{{ navigations.nextpage?.name }}
+      <i class="bx bx-right-arrow-alt ms-1"></i
+    ></a>
   </div>
 </div>

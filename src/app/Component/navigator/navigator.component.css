@@ -12,10 +12,17 @@
 
 @media screen and (max-width: 747px) {
     .navigator {
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
     .navigator a {
         font-size: 12px;
+    }
+
+    .btn-close {
+        position: relative;
+        font-size: 18px;
+        top: 0;
+        right: 0;
     }
 }

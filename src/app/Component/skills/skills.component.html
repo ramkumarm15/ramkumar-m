@@ -1,0 +1,10 @@
+<app-loader [loading]="loading"></app-loader>
+<main *ngIf="!loading" class="page-wrapper">
+  <div class="container">
+    <div class="row justify-content-center align-items-center page">
+      <section id="skills">
+        <app-navigator [navigations]="skillsPageNavigation"></app-navigator>
+      </section>
+    </div>
+  </div>
+</main>
