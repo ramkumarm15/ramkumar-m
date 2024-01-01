@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #ababab;
+}
+
+.page-wrapper {
+    border-top: 6px solid var(--si-primary);
+}
+
+.page {
+    width: 100%;
+    height: calc(100vh - 6px);
+}

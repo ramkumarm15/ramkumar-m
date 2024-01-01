@@ -1,0 +1,17 @@
+
+
+.page-title h1 {
+    font-weight: 900;
+    font-size: 56px;
+    color: var(--si-primary);
+}
+
+.page-title p {
+    font-size: 18px;
+}
+
+.page-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
