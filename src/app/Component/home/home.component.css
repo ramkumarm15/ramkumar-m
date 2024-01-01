@@ -1,5 +1,3 @@
-
-
 .page-title h1 {
     font-weight: 900;
     font-size: 56px;
@@ -14,4 +12,14 @@
     position: absolute;
     left: 0;
     right: 0;
+}
+
+@media screen and (max-width: 787px) {
+    .page-title h1 {
+        font-size: 42px;
+    }
+
+    .page-title p {
+        font-size: 14px;
+    }
 }

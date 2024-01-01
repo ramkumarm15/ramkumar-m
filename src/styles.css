@@ -14,3 +14,10 @@ body {
     width: 100%;
     height: calc(100vh - 6px);
 }
+
+@media screen and (max-width: 787px) {
+    .page {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
